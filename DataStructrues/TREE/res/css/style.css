@@ -1,0 +1,54 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.widgetContainer {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.formInput {
+  position: absolute;
+  padding: 10px;
+  right: 0px;
+  top : 0px;
+}
+
+.formInput input {
+  margin-top: 20px;
+}
+
+.result {
+    width: 100%;
+    padding: 10px;
+    min-height: 40px;
+    left: 0px;
+    position: absolute;
+    background: #ccc;
+    bottom: 0px;
+}
+
+.result .value span {
+  padding: 10px;
+}
+
+.mainContainer {
+  width: 100%;
+  height: 100%;
+}
+
+select.testcaseList {
+  position: absolute;
+  top: 10px;
+    left: 10px;
+    height: 30px;
+    border-radius: 5px;
+}
