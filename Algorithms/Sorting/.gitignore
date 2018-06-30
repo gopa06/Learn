@@ -1,0 +1,9 @@
+/**
+ * @author Gopakumar V
+ * @file description of file created
+ */
+node_modules/
+.history/
+.vscode/
+.cache/
+dist/
