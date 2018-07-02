@@ -6,8 +6,10 @@ import $ from "jquery";
 
 export default class PrintLog {
 
-    constructor(cntr) {
-        cntr.empty();
+    constructor(cntr, skipClear) {
+        if(skipClear !== true)
+            cntr.empty();
+            
         this._lineNo = 0;
         this._logCntr = $("<ul></ul>").addClass("console log").appendTo(cntr);
     }
