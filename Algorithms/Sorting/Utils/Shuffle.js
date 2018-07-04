@@ -34,13 +34,13 @@ import PrintLog from "./PrintLogs";
     },
 
     shuffle: function(arr, cntr) {
-        var printer = new PrintLog(cntr),
-            printId = printer.print(`Start shuffle of ${arr}`, true, null);
+        // var printer = new PrintLog(cntr),
+        //     printId = printer.print(`Start shuffle of ${arr}`, true, null);
         for(let j = 1; j < arr.length; j++){
             let msg = this.swap(arr,j, this.getRandomNumber(0,j));
-            printer.print(msg, true, printId);
+            // printer.print(msg, true, printId);
         }
-        printer.print(`${arr}`, true, printId);
+        // printer.print(`${arr}`, true, printId);
         return arr;
     }
  }

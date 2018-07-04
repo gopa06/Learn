@@ -47,6 +47,7 @@ let testcase = {
     addData: function (data) {
         var inputArr = data.split(",").map(function(v) { return Number(v); });
         if(this.algorithm) {
+            $("div.outputCntr").empty()
             console.log(this.algorithm(inputArr));
         }
     },

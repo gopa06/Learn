@@ -5,7 +5,8 @@
 import $ from "jquery";
 import PrintLog from "../Utils/PrintLogs";
 import Shuffle from "../Utils/Shuffle";
-
+console.log(Shuffle);
+console.log(PrintLog);
 let elementarySortAlgo = {
 
     getPrinter: function (cntr) {
@@ -113,5 +114,6 @@ export function bubbleSort(value) {
 };
 
 export function shuffle(value) {
+    console.log(Shuffle);
     Shuffle.shuffle(value, $("div.outputCntr"));
 }

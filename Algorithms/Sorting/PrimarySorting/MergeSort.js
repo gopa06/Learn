@@ -55,6 +55,7 @@ let _mergeSort = {
     },
 
     sort: function (arr) {
+        this._printer = null;
         this._printLog(`<h4>Merge Sorting : ${arr}</h4>`);
         this._sort(arr, 0, arr.length - 1);
         this._printLog(`<h4>After sorting : ${arr}</h4>`);
